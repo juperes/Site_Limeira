@@ -178,6 +178,52 @@ footer {
   }
 }
 
+.contato {
+  label {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--azul_claro);
+  }
+  input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    appearance: none; /* Remove o estilo padrão do navegador */
+    border-radius: 50%;
+    border: 2px solid var(--azul_claro); /* Borda azul */
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  input[type="radio"]:checked {
+    background-color: var(--azul_claro);
+    border-color: var(--azul_claro);  /* Escurece a borda quando selecionado */
+}
+
+  input[type="submit"] {
+    background-color: var(--azul_claro);
+    color: var(--branco);
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+  input[type="submit"]:hover {
+    background-color: var(--azul_lim);
+    color: var(--branco);
+  }
+}
+
 @media screen and (max-width: 600px) {
   nav,
   article,

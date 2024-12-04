@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="index.html" class="logo">
+            <img src="imagens/logo.png" alt="" />
+            <p>LIMEIRA</p>
+          </a>
+          <span>
+            <a href="a-cidade.html">Cidade |</a>
+            <a href="distancias.html">Distâncias |</a>
+            <a href="bairros.html">Bairros |</a>
+            <a href="localizacao.html">Localização |</a>
+            <a href="populacao.html">População |</a>
+            <a href="pontos-turisticos.html">Pontos Turísticos |</a>
+            <a href="esportes.html">Esportes |</a>
+            <a href="lista-de-prefeitos.html">Lista de Prefeitos |</a>
+            <a href="formulario.html">Formulário</a>
+          </span>
+        </nav>
+      </header>
+
+      <section class="imagem_destaque">
+        <img src="imagens/imagem_1.png" alt="" />
+      </section>
+
+      <article>
+        <h1>Formulário de Contato</h1>
+        <section class="contato">
+            <form id="form1" action="enviacontato.php" method="post">
+                <div>
+                  <label for="">Nome:</label>
+                  <input type="text" name="nome" id="nome" required/>
+                </div>
+                <div>
+                  <label for="">E-mail:</label>
+                  <input type="email" name="email" id="email" required/>
+                </div>
+                <div>
+                  <label for="">Gênero:</label>
+                  <input type="radio" name="sexo" id="masculino" value="masc"/> Masculino
+                  <input type="radio" name="sexo" id="feminino" value="fem"/> Feminino
+                </div>
+                <div>
+                  <label for="">Idade</label>
+                  <input type="number" min="0" step="1" oninput="validity.valid||(value='');" name="idade" id="idade" required/>
+                </div>
+                <div>
+                  <label for="">Comentário</label>
+                  <textarea name="comentario" id="comentario" rows="8"></textarea>
+                </div>
+                <div>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar Formulário">
+                  </div>
+        </section>
+      </article>
+
+      <footer>
+        <div>&copy; 2024 | Site Limeira | Créditos</div>
+  
+        <div>
+          <a
+            href="https://www.facebook.com/prefeituralimeira/?locale=pt_BR"
+            target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCz4DWo7eSBLFoHLqfAdkIFg"
+            target="_blank"
+            ><i class="bi bi-youtube"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/prefeituralimeira/?hl=pt"
+            target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.limeira.sp.gov.br/covid-19/telefones-uteis"
+            target="_blank"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+        </div>
+      </footer>
+
+      <script src="js/validaFormulario.js"></script>
+</body>
+</html>
